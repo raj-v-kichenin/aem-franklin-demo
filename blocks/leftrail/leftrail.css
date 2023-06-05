@@ -1,0 +1,43 @@
+.leftrail > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -181px;
+  float: left;
+  margin-bottom: 35px;
+}
+
+.leftrail img {
+  width: 100%;
+}
+
+.leftrail > div > div {
+  order: 1;
+}
+
+.leftrail > div > .leftrail-img-col {
+  order: 0;
+}
+
+.leftrail > div > .leftrail-img-col img {
+  display: block;
+}
+
+.leftrail-wrapper {
+  position: relative;
+  float: left;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 900px) {
+  .leftrail > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .leftrail > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
